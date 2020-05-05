@@ -6,8 +6,9 @@
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" href="_css/estilo.css"/>
     <link rel="stylesheet" href="_css/specs.css"/>
+    <!-- Para que o menu funcione sem problemas é necessário manter a troca de ícone desativada 
+    <script type="text/Javascript" src="_javascript/funcoes.js"></script> -->
 </head>
-<script type="text/Javascript" src="_javascript/funcoes.js"></script>
 <body>
 <div id="interface">
     <header id="cabecalho">
@@ -16,7 +17,7 @@
             <h2>A revolução do Google está chegando</h2>
         </hgroup>
 
-        <img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+        <img id="icone" src="_imagens/especificacoes.png"/>
 
         <nav id="menu" onmouseout="mudaFoto('_imagens/especificacoes.png')">
             <h1>Menu Principal</h1>
@@ -45,7 +46,13 @@
             Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
 
             <section id="conteudo">
-                <img src="_imagens/glass-esquema-marcado.jpg"/>
+                <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/>
+                <map name="meumapa">
+                    <area shape="poly" coords="182,218,266,207,267,246,184,259" href="google-glass.html#tela" target="janela"/>
+                    <area shape="circle" coords="158,244,12" href="google-glass.html#camera" target="janela"/>
+                    <area shape="circle" coords="76,52,11" href="google-glass.html#gadgets" target="janela"/>
+                    <area shape="poly" coords="27,143,84,216,83,255,27,171" href="google-glass.html#sensores" target="janela"/>
+                </map>
                 <iframe src="google-glass.html" name="janela" id="frame-spec" scrolling="no" frameborder="0"></iframe>
             </section>
         </article>
